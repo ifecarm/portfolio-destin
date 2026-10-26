@@ -89,14 +89,14 @@ mark{background:linear-gradient(var(--sun),var(--sun)) no-repeat 0 88%/100% 38%;
 .foot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:80px 0 0;padding:22px 0;border-top:1px solid #333;color:#8a877e;font-size:.72rem}
 
 @media (max-width:1000px){
-  .shell{grid-template-columns:1fr}
+  .shell{grid-template-columns:minmax(0,1fr)}
   .side__in{position:static;height:auto;flex-direction:row;flex-wrap:wrap;align-items:flex-end;padding:22px 22px 0}
   .side__id{font-size:1.7rem;flex:1}
   .side__ph{width:96px;aspect-ratio:1;order:-1}
   .side__role{flex-basis:100%}
   .side__nav{flex-direction:row;overflow-x:auto;flex-basis:100%;border-top:0;gap:22px;margin:0 -22px;padding:0 22px;scrollbar-width:none}
   .side__nav a{border-bottom:0;white-space:nowrap;padding:12px 0}.side__nav a span{display:none}.side__nav a:hover,.side__nav a.is-active{padding-left:0}
-  .sun{display:none}
+  .sun{display:block;position:fixed;right:10px;bottom:10px;width:140px;margin:0;padding:8px 10px 5px;background:var(--bg);border:var(--r);z-index:40;box-shadow:4px 4px 0 rgba(13,13,13,.18)}
   .intro{padding:64px 22px 50px}.blk,.contact{padding:64px 22px}.contact{padding-bottom:0}
   .stats{grid-template-columns:1fr}.stats>div,.stats>div+div{padding:28px 22px;border-left:0;border-top:var(--r)}.stats>div:first-child{border-top:0}
   .blk__h{grid-template-columns:1fr;gap:6px;margin-bottom:36px}
